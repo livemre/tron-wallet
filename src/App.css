@@ -1,5 +1,70 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
+
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+  font-family:'Outfit', Arial, Helvetica, sans-serif;
+  background-color: rgb(216, 216, 216);
+ 
+}
+
+
+
 .App {
   text-align: center;
+  margin: 10px;
+  background-color: rgb(55, 55, 55);
 }
 
 .App-logo {
@@ -36,3 +101,305 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* Combine Status */
+
+.combine-status-container {
+  background-color: #3d3d3d;
+  padding: 10px;
+}
+
+.combine-status {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.combine-status-icon {
+  margin-right: 5px;
+}
+
+.combine-status-desc {
+  color: white;
+  font-size: 1rem;
+}
+
+/*Publisher Info */
+
+.publisher-info {
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+}
+
+.publisher-info img {
+  border-radius: 100%;
+  border: 1px solid black;
+  width: 50px;
+}
+
+.publisher-info p {
+  color: white;
+  margin-left: 5px;
+}
+
+/* Single Match */
+
+.single-match-container {
+  background-color: aquamarine;
+}
+
+.single-match {
+  background-color: #3b3b3b;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px dotted rgb(103, 103, 103);
+}
+
+.league-time {
+  display: flex;
+  font-size: 0.9rem;
+  color: #e3e3e3;
+}
+
+.leauge{
+  margin-left: 5px;
+}
+
+.taxim {
+  margin: 0 3px;
+}
+
+.teams {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 5px 0;
+
+}
+
+
+
+.prediction-odds {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.odd {
+  border: 1px solid rgb(234, 234, 234);
+  padding: 0 7px;
+  margin: 0 5px;
+  width: 50px;
+}
+
+.odd-won {
+  border: 1px solid rgb(238, 238, 238);
+  background-color: rgb(25, 189, 52);
+  padding: 0 7px;
+  margin: 0 5px;
+  color: white;
+  width: 50px;
+}
+
+.odd-lost {
+  border: 1px solid rgb(238, 238, 238);
+  background-color: rgb(189, 25, 25);
+  padding: 0 7px;
+  margin: 0 5px;
+  color: white;
+  width: 50px;
+}
+
+.prediction {
+  text-align: left;
+  width: 80%;
+  font-size: 1rem;
+}
+
+.single-result {
+  color: #fbe461;
+  font-size: 0.9rem;
+
+}
+
+.font-9 {
+  font-size: 12px;
+}
+
+.result-scores {
+  color: #fbe461;
+  margin: 0 10px;
+  font-size: 0.8rem;
+}
+
+/* Combine Features */
+
+.combine-features-container{
+  font-size: 0.8rem;
+}
+
+.combine-features {
+  background-color:rgb(33, 33, 33);
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.combine-features-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content : center;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.combine-features-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+  
+}
+
+.features-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.created-time {
+  
+}
+
+/* Warnings Container */
+
+.warnings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.warning-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+
+}
+
+
+.warning{
+  color: #e0e0e0;
+  margin: 5px;
+  align-self: flex-start;
+  text-align: left;
+  font-size: 0.8rem;
+
+}
+
+
+
+/* Combine Actions */
+
+.combine-actions {
+  background-color: #696969;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.free-actions {
+  display: flex;
+  color: white;
+
+}
+
+.fa-likes-text {
+  margin-left: 5px;
+  font-size: 1.1rem;
+
+}
+
+/* Purchase */
+
+.purchase-container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.purchase-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.purchase {
+  background-color: rgb(24, 199, 140) ;
+  border: 0;
+  padding: 10px 20px;
+  color: white;
+}
+
+
+
+.purchase-info {
+  margin-right: 5px;
+  color: white;
+}
+
+.purchased-container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.purchased-container-info {
+  margin-bottom: 10px;
+}
+
+
+/* VIP Content */
+
+.vip-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e1e;
+  padding: 20px;
+  color: white;
+}
+
